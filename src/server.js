@@ -21,8 +21,8 @@ app.use("/auth", authRoutes);
 app.use("/watchlist", watchListRoutes);
 
 
-const server = app.listen(process.env.PORT || 3000, () => {
-    console.log(`Server is running on port ${process.env.PORT || 3000}`);
+const server = app.listen(process.env.PORT || 5001, () => {
+    console.log(`Server is running on port ${process.env.PORT || 5001}`);
 });
 
 // Handle unhandled promise rejections e.g Database connection errors
