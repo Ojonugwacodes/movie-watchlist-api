@@ -20,9 +20,10 @@ app.use("/movies", movieRoutes);
 app.use("/auth", authRoutes);
 app.use("/watchlist", watchListRoutes);
 
+const PORT = process.env.PORT || process.env.MY_PORT || 5001;
 
-const server = app.listen(process.env.PORT || 5001, () => {
-    console.log(`Server is running on port ${process.env.PORT}`);
+const server = app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
 
 // Handle unhandled promise rejections e.g Database connection errors
